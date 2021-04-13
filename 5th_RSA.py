@@ -20,7 +20,7 @@ while 1:
     if mod == 1:
         break
 
-# 암호화, c=p^e mod n
+# 암호화, c=m^e mod n
 
 plain = "aleopwafkeofp13fkowe"
 plain_list = [ord(x) for x in plain]  # ord(x): x를 아스키코드로 변환
@@ -31,7 +31,7 @@ for i in plain_list:
     x = (i ** e) % n
     cipher.append(int(x))
 
-# 복호화, p = c^d mod n
+# 복호화, m = c^d mod n
 
 decrypted = []
 for i in cipher:

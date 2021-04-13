@@ -4,6 +4,7 @@ total_students = 30
 total_teams = 6
 
 students = range(total_students)
+print(students)
 
 list_students = list(students)
 
